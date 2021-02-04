@@ -1,0 +1,34 @@
+{
+  "name": "my-wellness-journey",
+  "version": "1.0.0",
+  "description": "An app to get an stay motivated on the path to well-being.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gintstir/My-Wellness-Journey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gintstir/My-Wellness-Journey/issues"
+  },
+  "homepage": "https://github.com/Gintstir/My-Wellness-Journey#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.1.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.5.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
