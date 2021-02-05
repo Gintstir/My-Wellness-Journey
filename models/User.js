@@ -17,4 +17,4 @@ User.init (
     }
 );
 
-module.exports = Sleep;
+module.exports = User;
