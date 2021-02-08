@@ -11,6 +11,7 @@
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
+  background-color: var(--background);
 }
 
 h2 {
@@ -18,6 +19,24 @@ h2 {
 }
 
 /* Begin styling landing page */
+#landing-page-title {
+  margin-top: 5%;
+}
+#landing-title-button {
+  margin-top: 15%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 2px solid var(--dark);
+  background-color: var(--accent);
+  border-radius: 5px;
+  color: white;
+  white-space: nowrap;
+  box-shadow: 2px 5px var(--lowlight);
+}
+#landing-title-button:hover {
+  background: var(--lowlight);
+  box-shadow: none;
+}
 /* End styling landing page */
 
 /* Begin styling home page */
