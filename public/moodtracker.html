@@ -11,9 +11,28 @@
     <title>Track your mood</title>
   </head>
   <body>
-    <h1 id="h1">Hello, moodtracker!</h1>
+    <h2> Welcome to your moodtracker, </h2>
+    <section id="description"> 
+        <p>Click the button below to begin. Enter the date, a brief title, and select an icon that describes how you felt that day.</p>
+        <p>Over time you can track your mood on the graph that will generate below based on your input.</p>
+        <button> Track your mood </button>
+    </section>
 
+    <div class = "row" id= "cardparent">
+      <div class="card mood-card" style="width: 15rem;">
+        <div class="card-body">
+          <h5 class="card-title">Title </h5>
+          <h6 class="card-subtitle mb-2 text-muted">Date</h6>
+          <p class="card-text">Mood Indicator</p>
+        </div>
+      </div>
+    </div> <!-- The row div -->
 
+    <div class= "row" id ="graphparent">
+        <section id= "graphbox"> TURN ME INTO A GRAPH, PUNY MORTAL
+        </section>
+    </div>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS, then our JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

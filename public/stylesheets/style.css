@@ -9,8 +9,31 @@
 
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
 }
 
-#h1 {
-  color: red;
+h2 {
+  margin: 3%;
+}
+
+#description {
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+#cardparent {
+  margin: 5px;
+}
+.mood-card {
+  margin: 5px;
+}
+
+#graphparent {
+  position: relative;
+  margin: 5%;
+}
+#graphbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px black solid;
 }
