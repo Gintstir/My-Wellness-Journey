@@ -1,5 +1,5 @@
 # My-Wellness-Journey
-An app to get and stay motivated on the path to well-being.
+An app to get and stay motivated on the path to well-being.  Testing changes.  
 
 # My Wellness Journey
 
