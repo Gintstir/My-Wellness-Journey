@@ -14,6 +14,8 @@ body {
   background-color: var(--background);
 }
 
+/* Begin styling landing page */
+
 #bg-landing {
   position: fixed;
   top: 0;
@@ -30,7 +32,6 @@ h2 {
   margin: 3%;
 }
 
-/* Begin styling landing page */
 #landing-page-title-box {
   display: flex;
   margin-top: 2%;
