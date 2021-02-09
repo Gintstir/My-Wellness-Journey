@@ -19,17 +19,14 @@ Mood.init (
                 len: [1]
             }
         },
+        mood_date: {
+            type: DataTypes.DATEONLY,
+            allowNull: false
+        },
         mood_rating: {
             type: DataTypes.INTEGER,
             allowNull: false
-        },
-        mood_post: {
-            type: DataTypes.TEXT,
-            allowNull: false,
-            validate: {
-                len: [10]
-            }
-        },
+        },        
         user_id: {
             type: DataTypes.INTEGER,
             references: {
