@@ -1,6 +1,6 @@
 const User = require('../models/User');
 const Mood = require('../models/Mood');
-const Water = require('../models/Water');
+//const Water = require('../models/Water');
 const sequelize = require('../config/connection');
 
 //seeds for dummy data will go here create as many files as there are tables,
