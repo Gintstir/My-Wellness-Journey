@@ -13,4 +13,6 @@ function generateMoodInput() {
     return;
   }
 }
+
+//set values to empty after calling generateMoodInput
 moodButton.addEventListener("click", generateMoodInput);
