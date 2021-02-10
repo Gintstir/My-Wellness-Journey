@@ -1,15 +1,16 @@
 const moodButton = document.querySelector("#moodButton");
 
-function myFunction() {
+function generateMoodInput() {
   var titleInput = document.querySelector("#moodTitle").value;
   console.log(titleInput);
-  if ((titleInput = "Enter your mood")) {
+  if (titleInput != "") {
+    var moodInput = document.querySelector("#moodSlider").value;
+    console.log(moodInput);
+    var moodDate = document.querySelector("#moodDate").value;
+    console.log(moodDate);
+  } else {
     alert("Please enter a mood");
     return;
   }
-  var moodInput = document.querySelector("#moodSlider").value;
-  console.log(moodInput);
-  var moodDate = document.querySelector("#moodDate").value;
-  console.log(moodDate);
 }
-moodButton.addEventListener("click", myFunction);
+moodButton.addEventListener("click", generateMoodInput);
