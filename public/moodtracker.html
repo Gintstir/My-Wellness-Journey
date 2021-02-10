@@ -15,15 +15,21 @@
     <section id="description"> 
         <p>Click the button below to begin. Enter the date, a brief title, and select an icon that describes how you felt that day.</p>
         <p>Over time you can track your mood on the graph that will generate below based on your input.</p>
-        <button> Track your mood </button>
+        <button id="moodButton"> Track your mood </button>
     </section>
 
     <div class = "row" id= "cardparent">
       <div class="card mood-card" style="width: 15rem;">
         <div class="card-body">
-          <h5 class="card-title">Title </h5>
-          <h6 class="card-subtitle mb-2 text-muted">Date</h6>
-          <p class="card-text">Mood Indicator</p>
+          <input class="card-title" placeholder="Title" id="moodTitle"/>
+          <h6 class="card-subtitle mb-2 text-muted"><label for="start">Date:</label>
+
+            <input type="date" id="moodDate" name="trip-start"
+                   value="2018-07-22"
+                   min="2021-01-01" max="2025-12-31"></h6>
+            <label for="moodslider">Mood:</label>
+            <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value" id="moodSlider">
+                <output>1</output>
         </div>
       </div>
     </div> <!-- The row div -->
@@ -43,5 +49,6 @@
     <script src="./javascript/edit-post.js"></script>
     <script src="./javascript/login.js"></script>
     <script src="./javascript/logout.js"></script>
+    <script src="./javascript/moodcard.js"></script>
   </body>
 </html>
