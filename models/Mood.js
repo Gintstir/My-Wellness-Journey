@@ -16,11 +16,11 @@ Mood.init (
             type: DataTypes.STRING,
             allownull: false,
             validate: {
-                len: [1]
+                len: [1, 25]
             }
         },
         mood_date: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.STRING,
             allowNull: false
         },
         mood_rating: {
