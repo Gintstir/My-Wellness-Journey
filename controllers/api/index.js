@@ -12,6 +12,5 @@ router.use('/users', userRoutes);
 router.use('/moods', moodRoutes);
 
 
-
 module.exports = router;
 

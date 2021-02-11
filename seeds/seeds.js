@@ -69,49 +69,49 @@ const userdata = [
 const mooddata = [
     // user 1-----------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'stressed',
         mood_date: "2021-02-03",
         mood_rating: 3,
         user_id: 1
     },
     {
-        id: 2,
+        
         title: 'content',
         mood_date: "2021-02-04",
         mood_rating: 6,
         user_id: 1
     },
     {
-        id: 3,
+        
         title: 'tired',
         mood_date: "2021-02-05",
         mood_rating: 5,
         user_id: 1
     },
     {
-        id: 4,
+        
         title: 'moody',
         mood_date: "2021-02-01",
         mood_rating: 3,
         user_id: 1
     },
     {
-        id: 5,
+        
         title: 'excited',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 1
     },
     {
-        id: 6,
+        
         title: 'hungry',
         mood_date: "2021-01-26",
         mood_rating: 6,
         user_id: 1
     },
     {
-        id: 7,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 9,
@@ -119,49 +119,49 @@ const mooddata = [
     },
     //user 2-----------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'silly',
         mood_date: "2021-02-03",
         mood_rating: 9,
         user_id: 2
     },
     {
-        id: 2,
+        
         title: 'rested',
         mood_date: "2021-02-04",
         mood_rating: 6,
         user_id: 2
     },
     {
-        id: 3,
+        
         title: 'anxious',
         mood_date: "2021-02-05",
         mood_rating: 5,
         user_id: 2
     },
     {
-        id: 4,
+        
         title: 'bored',
         mood_date: "2021-02-01",
         mood_rating: 3,
         user_id: 2
     },
     {
-        id: 5,
+        
         title: 'hungry',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 2
     },
     {
-        id: 6,
+        
         title: 'excited',
         mood_date: "2021-01-29",
         mood_rating: 6,
         user_id: 2
     },
     {
-        id: 7,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 9,
@@ -169,49 +169,49 @@ const mooddata = [
     },
     //user 3-----------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'content',
         mood_date: "2021-02-03",
         mood_rating: 9,
         user_id: 3
     },
     {
-        id: 2,
+        
         title: 'rested',
         mood_date: "2021-02-04",
         mood_rating: 6,
         user_id: 3
     },
     {
-        id: 3,
+        
         title: 'hungry',
         mood_date: "2021-02-05",
         mood_rating: 5,
         user_id: 3
     },
     {
-        id: 4,
+        
         title: 'bored',
         mood_date: "2021-02-01",
         mood_rating: 3,
         user_id: 3
     },
     {
-        id: 5,
+        
         title: 'hungry',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 3
     },
     {
-        id: 6,
+        
         title: 'excited',
         mood_date: "2021-01-29",
         mood_rating: 6,
         user_id: 3
     },
     {
-        id: 7,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 9,
@@ -219,49 +219,49 @@ const mooddata = [
     },
     //user 4-----------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'silly',
         mood_date: "2021-02-03",
         mood_rating: 9,
         user_id: 4
     },
     {
-        id: 2,
+        
         title: 'rested',
         mood_date: "2021-02-04",
         mood_rating: 7,
         user_id: 4
     },
     {
-        id: 3,
+        
         title: 'rested',
         mood_date: "2021-02-05",
         mood_rating: 9,
         user_id: 4
     },
     {
-        id: 4,
+        
         title: 'bored',
         mood_date: "2021-02-01",
         mood_rating: 5,
         user_id: 4
     },
     {
-        id: 5,
+        
         title: 'bored',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 4
     },
     {
-        id: 6,
+        
         title: 'excited',
         mood_date: "2021-01-29",
         mood_rating: 6,
         user_id: 4
     },
     {
-        id: 7,
+        
         title: 'silly',
         mood_date: "2021-01-29",
         mood_rating: 9,
@@ -269,49 +269,49 @@ const mooddata = [
     },
     //user 5-----------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'rested',
         mood_date: "2021-02-03",
         mood_rating: 9,
         user_id: 5
     },
     {
-        id: 2,
+        
         title: 'rested',
         mood_date: "2021-02-04",
         mood_rating: 6,
         user_id: 5
     },
     {
-        id: 3,
+        
         title: 'content',
         mood_date: "2021-02-05",
         mood_rating: 10,
         user_id: 5
     },
     {
-        id: 4,
+        
         title: 'silly',
         mood_date: "2021-02-01",
         mood_rating: 7,
         user_id: 5
     },
     {
-        id: 5,
+        
         title: 'hungry',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 5
     },
     {
-        id: 6,
+        
         title: 'excited',
         mood_date: "2021-01-29",
         mood_rating: 6,
         user_id: 5
     },
     {
-        id: 7,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 9,
@@ -319,49 +319,49 @@ const mooddata = [
     },
     //user 6-------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'stressed',
         mood_date: "2021-02-03",
         mood_rating: 2,
         user_id: 6
     },
     {
-        id: 2,
+        
         title: 'anxious',
         mood_date: "2021-02-04",
         mood_rating: 4,
         user_id: 6
     },
     {
-        id: 3,
+        
         title: 'anxious',
         mood_date: "2021-02-05",
         mood_rating: 3,
         user_id: 6
     },
     {
-        id: 4,
+        
         title: 'bored',
         mood_date: "2021-02-01",
         mood_rating: 5,
         user_id: 6
     },
     {
-        id: 5,
+        
         title: 'hungry',
         mood_date: "2021-01-30",
         mood_rating: 5,
         user_id: 6
     },
     {
-        id: 6,
+        
         title: 'moody',
         mood_date: "2021-01-29",
         mood_rating: 3,
         user_id: 6
     },
     {
-        id: 7,
+        
         title: 'tired',
         mood_date: "2021-01-29",
         mood_rating: 6,
@@ -369,49 +369,49 @@ const mooddata = [
     },
     //user 7--------------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'moody',
         mood_date: "2021-02-03",
         mood_rating: 5,
         user_id: 7
     },
     {
-        id: 2,
+        
         title: 'moody',
         mood_date: "2021-02-04",
         mood_rating: 5,
         user_id: 7
     },
     {
-        id: 3,
+        
         title: 'moody',
         mood_date: "2021-02-05",
         mood_rating: 6,
         user_id: 7
     },
     {
-        id: 4,
+        
         title: 'rested',
         mood_date: "2021-02-01",
         mood_rating: 7,
         user_id: 7
     },
     {
-        id: 5,
+        
         title: 'hungry',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 7
     },
     {
-        id: 6,
+        
         title: 'moody',
         mood_date: "2021-01-29",
         mood_rating: 5,
         user_id: 7
     },
     {
-        id: 7,
+        
         title: 'moody',
         mood_date: "2021-01-29",
         mood_rating: 7,
@@ -419,49 +419,49 @@ const mooddata = [
     },
     //user 8-----------------------------------------------------------------
     {
-        id: 1,
+        
         title: 'tired',
         mood_date: "2021-02-03",
         mood_rating: 4,
         user_id: 8
     },
     {
-        id: 2,
+        
         title: 'rested',
         mood_date: "2021-02-04",
         mood_rating: 8,
         user_id: 8
     },
     {
-        id: 3,
+        
         title: 'tired',
         mood_date: "2021-02-05",
         mood_rating: 4,
         user_id: 8
     },
     {
-        id: 4,
+        
         title: 'rested',
         mood_date: "2021-02-01",
         mood_rating: 8,
         user_id: 8
     },
     {
-        id: 5,
+        
         title: 'tired',
         mood_date: "2021-01-30",
         mood_rating: 4,
         user_id: 8
     },
     {
-        id: 6,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 8,
         user_id: 8
     },
     {
-        id: 7,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 9,
@@ -469,49 +469,49 @@ const mooddata = [
     },
     //user 9---------------------------------------------------
     {
-        id: 1,
+        
         title: 'silly',
         mood_date: "2021-02-03",
         mood_rating: 7,
         user_id: 9
     },
     {
-        id: 2,
+        
         title: 'rested',
         mood_date: "2021-02-04",
         mood_rating: 8,
         user_id: 9
     },
     {
-        id: 3,
+        
         title: 'content',
         mood_date: "2021-02-05",
         mood_rating: 9,
         user_id: 9
     },
     {
-        id: 4,
+        
         title: 'excited',
         mood_date: "2021-02-01",
         mood_rating: 10,
         user_id: 9
     },
     {
-        id: 5,
+        
         title: 'hungry',
         mood_date: "2021-01-30",
         mood_rating: 8,
         user_id: 9
     },
     {
-        id: 6,
+        
         title: 'excited',
         mood_date: "2021-01-29",
         mood_rating: 6,
         user_id: 9
     },
     {
-        id: 7,
+        
         title: 'rested',
         mood_date: "2021-01-29",
         mood_rating: 9,
