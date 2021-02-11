@@ -4,6 +4,7 @@ const express = require('express');
 const session = require('express-session');
 //this sets up Handlebars.js functionality
 const exphbs = require('express-handlebars');
+const cors = require('cors');
 
 //=====================================
 
@@ -46,6 +47,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
+
+app.use(cors());
 
 
 
