@@ -99,12 +99,12 @@ h2 {
 #graphparent {
   position: relative;
   margin: 5%;
-}
-#graphbox {
+}  
+#graphbox { 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: 5px black solid;
-}
+}  
 /* End styling moodcard page */
