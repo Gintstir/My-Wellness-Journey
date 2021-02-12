@@ -23,4 +23,15 @@ async function generateMoodInput() {
     return;
   }
 }
+
+var field = document.querySelector('#moodDate');
+var date = new Date();
+
+//setting mooddate input to appear as today's date:
+
+// Set the date
+field.value = date.getFullYear().toString() + '-' + (date.getMonth() + 1).toString().padStart(2, 0) + 
+    '-' + date.getDate().toString().padStart(2, 0);
+
+
 moodButton.addEventListener("click", generateMoodInput);

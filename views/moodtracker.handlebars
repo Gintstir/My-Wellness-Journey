@@ -10,7 +10,7 @@
             <input class="card-title" placeholder="Enter your mood" id="moodTitle" maxlength="12"/>
             <h6><label for="start">Date:</label>
             <input type="date" id="moodDate" name="trip-start"
-                    value="2018-07-22"
+                    {{!-- value="2018-07-22" --}}
                     min="2021-01-01" max="2025-12-31"></h6>
             <label for="moodslider">Mood:</label>
             <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value" id="moodSlider">
@@ -22,7 +22,7 @@
 
 <div class= "row" id ="graphparent">
     <section id="graphbox"> TURN ME INTO A GRAPH, PUNY MORTAL
-        <canvas id="myChart" width="500" height="400"></canvas>
+        <canvas id="myChart" width="600" height="400"></canvas>
 
     </section>
 </div>
