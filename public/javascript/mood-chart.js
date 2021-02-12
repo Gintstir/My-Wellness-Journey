@@ -31,7 +31,10 @@ const myChart = new Chart(ctx, {
                     beginAtZero: true
                 }
             }]
-        }
+        },
+        responsive: true,
+            aspectRatio: 1,
+            maintainAspectRatio: false,
     }
 });
 
