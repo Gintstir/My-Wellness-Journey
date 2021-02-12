@@ -5,9 +5,18 @@ we'll receive a 404 error indicating we have requested an incorrect resource, an
 
 const router = require('express').Router();
 
-//import routes:
-//const route = require('./path);
 
+const homeRoutes = require('./home-routes.js');
+const apiRoutes = require('./api');
+//import routes:
+
+router.use('/', homeRoutes);
+router.use('/api', apiRoutes);
+
+
+router.use((req, res) => {
+    res.status(404).end();
+});
 
 //use routes:
 //router.use('/path', route);

@@ -5,6 +5,7 @@ const session = require('express-session');
 //this sets up Handlebars.js functionality
 const exphbs = require('express-handlebars');
 
+
 //=====================================
 
 const app = express();
@@ -16,7 +17,7 @@ const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-    secret: 'Super secret secret',
+    secret: 'super secret secret',
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -46,6 +47,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(require('./controllers/'));
+
+
 
 
 
