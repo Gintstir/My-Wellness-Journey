@@ -11,17 +11,20 @@ Exercise.init (
             primaryKey: true,
             autoIncrement: true
         },
-        exercise_bool: {
-            type: DataTypes.BOOLEAN,
-            allowNull: true
-        },
-        user_id: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'user',
-                key: 'id'
+        exercise_title: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            validate: {
+                len: [3]
             }
-        }
+        },
+        exercise_body: {
+            type: DataTypes.TEXT,
+            allowNull: false,
+            validate: {
+                len: [5]
+            }
+        },        
     },
     {
     sequelize,

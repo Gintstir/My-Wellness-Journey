@@ -28,7 +28,7 @@ async function generateMoodInput() {
 }
 
 
-
+//js to display today's date in mood date Input
 var field = document.querySelector('#moodDate');
 var date = new Date();
 
