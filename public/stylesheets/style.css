@@ -112,3 +112,7 @@ h2 {
   border: 5px black solid;
 }  
 /* End styling moodcard page */
+
+.hide {
+  display: none;
+}

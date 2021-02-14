@@ -1,11 +1,18 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
+const withAuth = require('../utils/auth');
 
 router.get('/', (req, res) => {
     console.log(req.session);
-    res.render('homepage', {
-        loggedIn: req.session.loggedIn
-    });
+    if(req.session.loggedIn) {
+        res.render('homepage', {
+            loggedIn: req.session.loggedIn
+        })
+    } else {
+        res.render('landing', {
+            loggedIn: req.session.loggedIn
+        });
+    }
 });
 
 router.get('/login', (req, res) => {
@@ -16,12 +23,20 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/moodtracker', (req, res) => {
-    if(req.session.loggedIn) {
-        res.render('moodtracker', {
-            loggedIn: req.session.loggedIn
-        });
-    }
+router.get('/about', (req, res) => {
+    res.render('about')
+})
+
+router.get('/home', withAuth, (req, res) => {
+    res.render('homepage', {
+        loggedIn: req.session.loggedIn
+    });
+})
+
+router.get('/moodtracker', withAuth, (req, res) => {
+    res.render('moodtracker', {
+        loggedIn: req.session.loggedIn
+    });
 })
 
 module.exports = router;
