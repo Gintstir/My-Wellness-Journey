@@ -10,21 +10,24 @@
             <input class="card-title" placeholder="Enter your mood" id="moodTitle" maxlength="12"/>
             <h6><label for="start">Date:</label>
             <input type="date" id="moodDate" name="trip-start"
-                    value="2018-07-22"
+                    {{!-- value="2018-07-22" --}}
                     min="2021-01-01" max="2025-12-31"></h6>
             <label for="moodslider">Mood:</label>
             <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value" id="moodSlider">
             <output>1</output>
             <button id="moodButton"> Track your mood </button>
+            <div id="noMoodEntered" class="alert alert-danger" role="alert">
+                Please enter your mood!
+            </div>
         </div>
     </div>
 </div> <!-- The row div -->
 
 <div class= "row" id ="graphparent">
-    <section id="graphbox"> TURN ME INTO A GRAPH, PUNY MORTAL
-        <canvas id="myChart" width="500" height="400"></canvas>
+    <div id="graphbox" style="width:40%"> Moodtracker™
+        <canvas id="myChart" width="600" height="400" style="display: block; box-sizing: border-box; width: 739.5px; height: 369px;"></canvas>
 
-    </section>
+    </div>
 </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS, then our JS -->
 

@@ -7,11 +7,12 @@ const myChart = new Chart(ctx, {
             label: 'Your Moods',
             data: [],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
+                'rgba(47, 157, 144, .4)',
                 
             ],
             borderColor: [
-                'rgba(255, 99, 132, 1)',                
+                // 'rgba(255, 99, 132, 1)',
+                'rgba(47, 157, 144, 1)'                
             ],
             borderWidth: 1
         }]
@@ -33,8 +34,8 @@ const myChart = new Chart(ctx, {
             }]
         },
         responsive: true,
-            aspectRatio: 1,
-            maintainAspectRatio: false,
+            aspectRatio: 2,
+            //maintainAspectRatio: false, 
     }
 });
 
