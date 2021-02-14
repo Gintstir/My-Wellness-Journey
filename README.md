@@ -21,6 +21,7 @@ My-Wellness-Journey is all about you.  Connecting a robust back-end to an intera
 
 ## **Screenshots**
 
+![landing-page](public/assets/My-Wellness-Journey.png)
 
 ## **Installation**
 
@@ -30,18 +31,18 @@ To install necessary dependencies.
 
 ## **Usage**
 
-1. To start the server in terminal:<br>
-        `node server.js` or `npm start`<br>
-2. To quit server in terminal:<br>
-        `CTRL C`<br>
-3. To reset server after changes to database- In server.js change:<br>
-        `force: false` to `force: true`,<br>
-save the file and rerun step #1. Change:<br>
-        `force: true` back to `false`,<br>
-save the file and rerun step #1. The server/database should now be live with your changes.
-4. If using seeds/seeds.js to test database structure and calls to front-end. In the terminal use the command:<br>
-        `node seeds/seeds.js`<br>
-to reseed the server with dummy data.
+1. To start the server in terminal:
+    - `node server.js` or `npm start`
+2. To quit server in terminal:
+    - `CTRL+C`
+3. To reset server after changes to database- In server.js change:
+    - `force: false` to `force: true`
+    - save the file and rerun step #1. 
+    - Change: `force: true` back to `false`
+    - save the file and rerun step #1. The server/database should now be live with  your changes.
+4. If using seeds/seeds.js to test database structure and calls to front-end. In the terminal use the command:
+    - `node seeds/seeds.js`
+
 
 
 
