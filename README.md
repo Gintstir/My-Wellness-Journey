@@ -23,6 +23,10 @@ My-Wellness-Journey is all about you.  Connecting a robust back-end to an intera
 
 ![landing-page](public/assets/My-Wellness-Journey.png)
 
+![login-page](public/assets/login-page.png)
+
+![moodtracker](public/assets/moodtracker.png)
+
 ## **Installation**
 
 Use npm command:<br>
@@ -67,7 +71,10 @@ For any questions, comments, or feedback please feel free to reach out to our te
 <br>
 
 ## **Roadmap**
-
+All great projects have room for improvement and innovation.  We are open to any and all feedback regarding tweaks and additions to this site.  Some elements that we have considered:
+- Allow cross-user interaction in the form or viewing other user's moodtrackers and being able to leave positive reinforcement.
+- Integrate a journaling feature.
+- Implement other behavioral trackers such as water consumption/sleep etc. 
 
 ## **Contributing**
 
@@ -79,20 +86,20 @@ Please refer to the **[Contributor Covenant](https://www.contributor-covenant.or
 
 This project was completed using the following technologies, libraries, and software: 
 
-- `Node.js`
-- `Sequelize`
-- `MySQL2`
-- `Dotenv`
-- `Express`
-- `Insomnia`
-- `bcrypt`
-- `express-handlebars`
-- `express-sessio`
-- `bootstrap`
-- `connect-session-sequelize`
-- `Chart.js`
-- `MySql Workbench`
-- `Heroku`
+- **[Node.js](https://nodejs.org/en/)**
+- **[sequelize](https://www.npmjs.com/package/sequelize)**
+- **[mySQL](https://www.npmjs.com/package/mysql2)**
+- **[dotenv](https://www.npmjs.com/package/dotenv)**
+- **[express](https://www.npmjs.com/package/express)**
+- **[Insomnia](https://insomnia.rest/)**
+- **[bcrypt](https://www.npmjs.com/package/bcrypt)**
+- **[express-handlebars](https://www.npmjs.com/package/express-handlebars)**
+- **[express-session](https://www.npmjs.com/package/express-session)**
+- **[bootstrap](https://getbootstrap.com/)**
+- **[connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)**
+- **[Chart.js](https://www.chartjs.org/)**
+- **[MySql Workbench](https://www.mysql.com/products/workbench/)**
+- **[Heroku](https://www.heroku.com/home)**
 <br>
 
 ## **Tests**
