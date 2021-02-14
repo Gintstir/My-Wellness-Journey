@@ -1,3 +1,5 @@
+$('.alert').hide();
+
 async function signupFormHandler(event) {
     event.preventDefault();
   
@@ -6,6 +8,7 @@ async function signupFormHandler(event) {
     const password = document.querySelector('#password-signup').value.trim();
   
     if (username && email && password) {
+        $('.alert').hide();
         const response = await fetch('/api/users', {
             method: 'post',
             body: JSON.stringify({
@@ -15,12 +18,16 @@ async function signupFormHandler(event) {
             }),
             headers: { 'Content-Type': 'application/json' }
         });
+        document.getElementById("signup-form").reset();
         //check response status
+        console.log(response)
         if(response.ok) {
-            console.log('sucess');
+            $('#successSignUp').show();
         } else {
-            alert(response.statusText);
+            $('#failedSignUp').show();
         }
+    } else {
+        $('#missingSignUp').show()
     }
 }
 
@@ -31,6 +38,8 @@ async function loginFormHandler(event) {
     const password = document.querySelector('#password-login').value.trim();
   
     if (email && password) {
+        $('.alert').hide();
+        document.getElementById("login-form").reset();
         const response = await fetch('/api/users/login', {
             method: 'post',
                 body: JSON.stringify({
@@ -43,8 +52,10 @@ async function loginFormHandler(event) {
         if(response.ok) {
             document.location.replace('/');
         } else {
-            alert(response.statusText);
+            $('#failedLogin').show();
         }
+    } else {
+        $('#missingLogin').show();
     }
 }
 
