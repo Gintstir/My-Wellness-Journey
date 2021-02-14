@@ -96,6 +96,10 @@ h2 {
   margin: 5px;
 }
 
+.alert {
+  margin: 5px;
+}
+
 #graphparent {
   position: relative;
   margin: 5%;
