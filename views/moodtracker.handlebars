@@ -1,19 +1,21 @@
 <h2> Welcome to your moodtracker, </h2>
-<section id="description"> 
-    <p>Click the button below to begin. Enter the date, a brief title, and select an icon that describes how you felt that day.</p>
-    <p>Over time you can track your mood on the graph that will generate below based on your input.</p>
+<section id="description">
+    <p>Enter the date, a brief title, and select a number that reflects your positivity for the day where 10 is the most
+        positive. Then click the button to submit.</p>
+    <p>Over time you can track your mood trends on the graph that will generate below based on your input.</p>
 </section>
 
-<div class = "row" id= "cardparent">
+<div class="row" id="cardparent">
     <div class="card mood-card" style="width: 15rem;">
         <div class="card-body">
-            <input class="card-title" placeholder="Enter your mood" id="moodTitle" maxlength="12"/>
+            <input class="card-title" placeholder="Enter your mood" id="moodTitle" maxlength="12" />
             <h6><label for="start">Date:</label>
-            <input type="date" id="moodDate" name="trip-start"
-                    {{!-- value="2018-07-22" --}}
-                    min="2021-01-01" max="2025-12-31"></h6>
+                <input type="date" id="moodDate" name="trip-start" {{!-- value="2018-07-22" --}} min="2021-01-01"
+                    max="2025-12-31">
+            </h6>
             <label for="moodslider">Mood:</label>
-            <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value" id="moodSlider">
+            <input type="range" value="1" min="1" max="10" oninput="this.nextElementSibling.value = this.value"
+                id="moodSlider">
             <output>1</output>
             <button id="moodButton"> Track your mood </button>
             <div id="noMoodEntered" class="alert alert-danger" role="alert">
@@ -23,17 +25,22 @@
     </div>
 </div> <!-- The row div -->
 
-<div class= "row" id ="graphparent">
+<div class="row" id="graphparent">
     <div id="graphbox" style="width:40%"> Moodtracker™
-        <canvas id="myChart" width="600" height="400" style="display: block; box-sizing: border-box; width: 739.5px; height: 369px;"></canvas>
+        <canvas id="myChart" width="600" height="400"
+            style="display: block; box-sizing: border-box; width: 739.5px; height: 369px;"></canvas>
 
     </div>
 </div>
 <!-- jQuery first, then Popper.js, then Bootstrap JS, then our JS -->
 
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script src="./javascript/mood-chart.js"></script>
 <script src="./javascript/moodcard.js"></script>
