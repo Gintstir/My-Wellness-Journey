@@ -85,6 +85,7 @@ h2 {
 /* Begin styling home page */
 .home-cards {
   color: black;
+  margin: 5px;
 }
 #moodcard-box {
   color: black;
