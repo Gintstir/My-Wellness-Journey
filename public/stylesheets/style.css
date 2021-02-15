@@ -83,6 +83,10 @@ h2 {
 /* End styling landing page */
 
 /* Begin styling home page */
+#home-title {
+  text-align: start;
+  margin-left: 3%;
+}
 .home-cards {
   color: black;
   margin: 5px;
