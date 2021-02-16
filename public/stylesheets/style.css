@@ -16,6 +16,8 @@ body {
   text-align: center;
   background-color: var(--background);
 }
+
+/*landing page animation*/
 .landing-page-body {
   margin-top: 25px;
   font-size: 21px;
@@ -70,18 +72,33 @@ body {
 .page-title {
   font-family: "Satisfy", cursive;
 }
+
+/* end landing page animation*/
 /* Begin styling landing page */
 
 #bg-landing {
+  opacity: 75%;
+  z-index: -1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
+}
 
-  /* Preserve aspect ratio */
-  min-width: 100%;
-  min-height: 100%;
-  opacity: 75%;
-  z-index: -1;
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  #bg-landing {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
 }
 
 h2 {
@@ -90,7 +107,7 @@ h2 {
 
 #landing-page-title-box {
   display: flex;
-  margin-top: 2%;
+  margin-top: 8%;
   margin-left: 3%;
   justify-content: flex-start;
   max-width: fit-content;
@@ -119,7 +136,7 @@ h2 {
 }
 
 #landing-title-button:hover {
-  color: var(--accent);
+  color: var(--background);
 }
 
 #about-box {
@@ -140,7 +157,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 #about-box-button:hover {
-  color: var(--accent);
+  color: var(--background);
 }
 /* End styling landing page */
 
