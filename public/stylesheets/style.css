@@ -307,6 +307,6 @@ h2 {
 @media only screen and (max-width: 600px) {
   #about-box {
     position: absolute;
-    top: 300px;
+    top: 450px;
   }
 }
