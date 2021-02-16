@@ -1,9 +1,10 @@
 :root {
-  --background: #dfcece;
+  --background: hsl(0, 21%, 84%);
   --accent: #7c73bf;
   --highlight: #2f9d90;
   --lowlight: #876e6e;
   --dark: #2e1b0f;
+  --transparentbackground: hsl(0, 28%, 91%, 0.8);
 }
 /* using external font families 
 font-family: 'Montserrat', sans-serif;
@@ -309,11 +310,31 @@ h2 {
 }
 
 /* begin styling about page */
-#about-me-p {
+#bg-about {
+  opacity: 50%;
+  z-index: -1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#about-me-page-div {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3%;
   width: 75%;
+  background-color: var(--transparentbackground);
+  border-radius: 10px;
 }
+
 /* end styling about page */
 
 /* media queries for landing page */
