@@ -2,27 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Wellness Journey</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wellness Journey</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-<body>
+{{#if loggedIn}}
+
+<body id="main-layout">
     <div class="wrapper">
         <header>
-            <h1>
+            <h1 class="page-title">
                 <a href="/">My Wellness Journey</a>
             </h1>
             <nav>
-                {{#if loggedIn}}
-                <a href="/">Dashboard</a>
+
+                <a href="/homepage">Home</a>
+                |
                 <a href="/moodtracker">Moodtracker</a>
-                <button id="logout" class="btn-no-style">Logout</button>
-                {{else}}
-                <a href="/login">Login</a>
-                {{/if}}
+                |
+                <a href="/about">About Us</a>
+                |
+                <a href="" id="logout" class="btn-no-style">Logout</a>
+
             </nav>
         </header>
         <main>
@@ -32,9 +38,13 @@
             {{!-- Thanks for visiting! --}}
         </footer>
     </div>
-    {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
-    {{/if}}
 </body>
+{{else}}
+
+<body>
+    {{{ body }}}
+</body>
+{{/if}}
 
 </html>
