@@ -121,7 +121,7 @@ h2 {
 #landing-button-box {
   width: fit-content;
   position: relative;
-  top: 75px;
+  top: 120px;
   margin-left: 2%;
 }
 
@@ -144,7 +144,8 @@ h2 {
   margin-left: 2%;
   margin-bottom: 2%;
   position: absolute;
-  bottom: 30px;
+  bottom: 50px;
+  right: 10px;
 }
 
 #about-box-button {
