@@ -334,6 +334,9 @@ h2 {
   background-color: var(--transparentbackground);
   border-radius: 10px;
 }
+#about-me-page-text {
+  padding: 1%;
+}
 
 /* end styling about page */
 
