@@ -7,14 +7,19 @@
 }
 /* using external font families 
 font-family: 'Montserrat', sans-serif;
-font-family: 'Satisfy', cursive; */
+font-family: 'Satisfy', cursive; 
+*/
 /* root syntax example:  background-color: var(--background); */
 
 /* Global CSS adjustments */
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: var(--background);
+}
+.title {
+  font-family: "Satisfy", cursive;
+  margin-top: 4%;
 }
 
 /*landing page animation*/
@@ -302,6 +307,14 @@ h2 {
 .hide {
   display: none;
 }
+
+/* begin styling about page */
+#about-me-p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+/* end styling about page */
 
 /* media queries for landing page */
 @media only screen and (max-width: 600px) {
