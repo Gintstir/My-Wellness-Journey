@@ -1,20 +1,54 @@
 :root {
-  --background: #dfcece;
+  --background: hsl(0, 21%, 84%);
   --accent: #7c73bf;
-  --highlight: #2f9d90;
-  --lowlight: #876e6e;
+  --highlight: hsl(173, 54%, 40%);
+  --lowlight: rgb(135, 110, 110);
   --dark: #2e1b0f;
+  --transparentbackground: hsl(0, 28%, 91%, 0.8);
+  --transparentaccent: rgba(160, 133, 133, 0.8);
 }
 /* using external font families 
 font-family: 'Montserrat', sans-serif;
-font-family: 'Satisfy', cursive; */
+font-family: 'Satisfy', cursive; 
+*/
 /* root syntax example:  background-color: var(--background); */
 
 /* Global CSS adjustments */
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: var(--background);
+}
+.title {
+  font-family: "Satisfy", cursive;
+  margin-top: 4%;
+}
+
+.bg-secondary {
+  opacity: 65%;
+  z-index: -1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.general-box {
+  background-color: var(--transparentbackground);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.general-box:hover {
+  background-color: var(--transparentaccent);
 }
 
 /*landing page animation*/
@@ -170,6 +204,9 @@ h2 {
   text-align: center;
   overflow: hidden;
 }
+.slider:hover {
+  cursor: pointer;
+}
 
 .slides {
   display: flex;
@@ -257,16 +294,19 @@ h2 {
   margin: 5px;
 }
 #moodcard-image {
-  margin-top: 1%;
+  height: 50%;
 }
 #moodcard-box {
   color: black;
+  text-decoration: none;
 }
 #exercise-box {
   color: black;
+  text-decoration: none;
 }
 #water-box {
   color: black;
+  text-decoration: none;
 }
 /* End styling home page */
 
@@ -303,10 +343,32 @@ h2 {
   display: none;
 }
 
+/* begin styling about page */
+
+#about-me-page-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 75%;
+  background-color: var(--transparentbackground);
+  border-radius: 10px;
+}
+#about-me-page-text {
+  padding: 1%;
+}
+
+/* end styling about page */
+
+/*styling login page*/
+#signin-container {
+  margin-top: 3%;
+}
+/*end styling login page*/
+
 /* media queries for landing page */
 @media only screen and (max-width: 600px) {
   #about-box {
     position: absolute;
-    top: 300px;
+    top: 450px;
   }
 }
