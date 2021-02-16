@@ -23,11 +23,14 @@ router.get('/login', (req, res) => {
     res.render('login');
 });
 
-router.get('/about', (req, res) => {
-    res.render('about')
+router.get('/about', withAuth, (req, res) => {
+
+    res.render('about', {
+        loggedIn: req.session.loggedIn
+    })
 })
 
-router.get('/home', withAuth, (req, res) => {
+router.get('/homepage', withAuth, (req, res) => {
     res.render('homepage', {
         loggedIn: req.session.loggedIn
     });
