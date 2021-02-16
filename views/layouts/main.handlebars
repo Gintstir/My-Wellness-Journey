@@ -2,22 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Wellness Journey</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wellness Journey</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 {{#if loggedIn}}
+
 <body id="main-layout">
     <div class="wrapper">
         <header>
-            <h1>
+            <h1 class="page-title">
                 <a href="/">My Wellness Journey</a>
             </h1>
             <nav>
-                
+
                 <a href="/homepage">Home</a>
                 |
                 <a href="/moodtracker">Moodtracker</a>
@@ -25,7 +28,7 @@
                 <a href="/about">About Us</a>
                 |
                 <a href="" id="logout" class="btn-no-style">Logout</a>
-                
+
             </nav>
         </header>
         <main>
@@ -38,6 +41,7 @@
     <script src="/javascript/logout.js"></script>
 </body>
 {{else}}
+
 <body>
     {{{ body }}}
 </body>
