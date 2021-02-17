@@ -18,10 +18,15 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: var(--background);
+  color: var(--dark);
 }
 .title {
   font-family: "Satisfy", cursive;
   margin-top: 4%;
+}
+
+.master-header {
+  color: var(--dark);
 }
 
 .bg-secondary {
@@ -247,7 +252,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
+  font-size: medium;
 }
 .author-info {
   background: rgba(0, 0, 0, 0.75);
