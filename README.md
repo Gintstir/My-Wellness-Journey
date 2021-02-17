@@ -40,11 +40,15 @@ SO THAT I can recenter and refocus myself and return to work.
 
 ## **Screenshots**
 
-![landing-page](public/assets/My-Wellness-Journey.png)
+![landing-page](public/assets/landing-page.png)
 
 ![login-page](public/assets/login-page.png)
 
-![moodtracker](public/assets/moodtracker.png)
+![homepage](public/assets/homepage.png)
+
+![moodtracker](public/assets/mood-tracker.png)
+
+![about-us](public/assets/about-us.png)
 
 ## **Installation**
 
