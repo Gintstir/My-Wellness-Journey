@@ -1,28 +1,21 @@
-console.log("page connected");
+var button = document.querySelector("#button");
 
-function waterGif() {
-  var giphyURL =
-    "https://api.giphy.com/v1/gifs/search?api_key=FFriNIm74coTFQkIGMJquSlGPMXH0OgI&q=water&limit=25&offset=0&rating=g&lang=en";
-  //format the response/promise
-  fetch(giphyURL)
+function displayWaterGif() {
+  // Create a variable to hold the value of rating
+  fetch(
+    "https://api.giphy.com/v1/gifs/search?q=water&rating=g&api_key=FFriNIm74coTFQkIGMJquSlGPMXH0OgI&limit=15"
+  )
     .then(function (response) {
-      if (response.ok) {
-        response.json().then(function (data) {
-          // call displayWaterGif and pass data as an argument
-          console.log(data);
-          displayWaterGif(data);
-        });
-      } else {
-        alert("Error: " + response.statusText);
-      }
+      return response.json();
     })
-    .catch(function (error) {
-      alert("unable to connect to server");
+    .then(function (response) {
+      console.log(response.data[0]);
+      var responseContainerEl = document.querySelector("#response-container");
+      responseContainerEl.innerHTML = "";
+      var gifImg = document.createElement("img");
+      var x = Math.floor(Math.random() * 19 + 1);
+      gifImg.setAttribute("src", response.data[x].images.fixed_height.url);
+      responseContainerEl.appendChild(gifImg);
     });
 }
-
-var displayWaterGif = function (data) {
-  console.log("ok, you got me");
-};
-
-waterGif();
+displayWaterGif();
