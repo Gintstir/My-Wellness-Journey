@@ -1,4 +1,7 @@
 const ctx = document.getElementById('myChart');
+
+
+
 const myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -10,32 +13,33 @@ const myChart = new Chart(ctx, {
                 'rgba(47, 157, 144, .4)',
                 
             ],
-            borderColor: [
-                // 'rgba(255, 99, 132, 1)',
+            borderColor: [                
                 'rgba(47, 157, 144, 1)'                
             ],
             borderWidth: 1
         }]
     },
     options: {
-        scales: {
-            // xAxes:[{
-            //     type: 'time',
-            //     time: {
-            //         displayFormats: {
-            //             week: 'YYYY-MM-DD'
-            //         }
-            //     }
-            // }],
-            yAxes: [{
+        scales: {            
+            yAxes: [{                
                 ticks: {
-                    beginAtZero: true
+                    max: 10,
+                    min: 0,
+                    stepSize: 1.0,                    
                 }
             }]
         },
+        title: {
+            display: true,
+            fontSize: 18,
+            text: 'Moodtracker'
+        },        
         responsive: true,
-            aspectRatio: 2,
-            //maintainAspectRatio: false, 
+        aspectRatio: 2,
+        maintainAspectRatio: true,
+        tooltips: {
+            mode: 'nearest'
+        } 
     }
 });
 
@@ -50,6 +54,7 @@ async function getData() {
     console.log(dbMoodData);
     myChart.data.datasets[0].data = dbMoodData.map(moodData => moodData.mood_rating);
     myChart.data.labels = dbMoodData.map(moodData => moodData.mood_date);
+    
     
     myChart.update();
     
