@@ -247,7 +247,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: large;
+  font-size: medium;
 }
 .author-info {
   background: rgba(0, 0, 0, 0.75);
