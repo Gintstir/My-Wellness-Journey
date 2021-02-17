@@ -18,10 +18,15 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: var(--background);
+  color: var(--dark);
 }
 .title {
   font-family: "Satisfy", cursive;
   margin-top: 4%;
+}
+
+.master-header {
+  color: var(--dark);
 }
 
 .bg-secondary {
