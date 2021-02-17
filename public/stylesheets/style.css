@@ -1,31 +1,138 @@
 :root {
-  --background: #dfcece;
+  --background: hsl(0, 21%, 84%);
   --accent: #7c73bf;
-  --highlight: #2f9d90;
-  --lowlight: #876e6e;
+  --highlight: hsl(173, 54%, 40%);
+  --lowlight: rgb(135, 110, 110);
   --dark: #2e1b0f;
+  --transparentbackground: hsl(0, 28%, 91%, 0.8);
+  --transparentaccent: rgba(160, 133, 133, 0.8);
 }
+/* using external font families 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Satisfy', cursive; 
+*/
 /* root syntax example:  background-color: var(--background); */
 
 /* Global CSS adjustments */
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   background-color: var(--background);
 }
+.title {
+  font-family: "Satisfy", cursive;
+  margin-top: 4%;
+}
 
-/* Begin styling landing page */
+.bg-secondary {
+  opacity: 65%;
+  z-index: -1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
 
-#bg-landing {
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
   position: fixed;
   top: 0;
   left: 0;
+}
 
-  /* Preserve aspect ratio */
-  min-width: 100%;
-  min-height: 100%;
+.general-box {
+  background-color: var(--transparentbackground);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.general-box:hover {
+  background-color: var(--transparentaccent);
+}
+
+/*landing page animation*/
+.landing-page-body {
+  margin-top: 25px;
+  font-size: 21px;
+  text-align: center;
+
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-title {
+  font-family: "Satisfy", cursive;
+}
+
+/* end landing page animation*/
+/* Begin styling landing page */
+
+#bg-landing {
   opacity: 75%;
   z-index: -1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  #bg-landing {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
 }
 
 h2 {
@@ -34,51 +141,58 @@ h2 {
 
 #landing-page-title-box {
   display: flex;
-  margin-top: 2%;
-  margin-left: 5%;
+  margin-top: 8%;
+  margin-left: 3%;
   justify-content: flex-start;
   max-width: fit-content;
   padding: 1px;
 }
 #landing-page-title {
   color: white;
-  text-shadow: 3px 3px var(--dark);
+  text-shadow: 2px 2px var(--dark);
+  font-family: "Satisfy", cursive;
 }
+#landing-button-box {
+  width: fit-content;
+  position: relative;
+  top: 120px;
+  margin-left: 2%;
+}
+
 #landing-title-button {
   margin-top: 15%;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: transparent;
   color: white;
   text-shadow: 2px 2px var(--dark);
-  border: none;
   white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+  font-size: small;
+  text-decoration: none;
 }
+
 #landing-title-button:hover {
-  text-shadow: 3px 3px var(--dark);
+  color: var(--background);
 }
 
 #about-box {
-  float: right;
-  margin-right: 5%;
+  float: left;
+  margin-left: 2%;
   margin-bottom: 2%;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  color: white;
-  text-shadow: 2px 2px var(--dark);
+  bottom: 50px;
+  right: 10px;
 }
+
 #about-box-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   background-color: transparent;
   color: white;
-  text-shadow: 2px 2px var(--dark);
+  text-shadow: 1px 1px var(--dark);
   border: none;
   white-space: nowrap;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 #about-box-button:hover {
-  color: white;
+  color: var(--background);
 }
 /* End styling landing page */
 
@@ -89,6 +203,9 @@ h2 {
   width: 100%;
   text-align: center;
   overflow: hidden;
+}
+.slider:hover {
+  cursor: pointer;
 }
 
 .slides {
@@ -177,48 +294,75 @@ h2 {
   margin: 5px;
 }
 #moodcard-image {
-  margin-top: 1%;
+  height: 50%;
 }
 #moodcard-box {
   color: black;
+  text-decoration: none;
 }
 #exercise-box {
   color: black;
+  text-decoration: none;
 }
 #water-box {
   color: black;
+  text-decoration: none;
 }
 /* End styling home page */
 
 /* Begin styling moodcard page */
 #description {
   font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
-}
-
-#cardparent {
-  margin: 5px;
-}
-.mood-card {
-  margin: 5px;
+  color: white;
+  text-shadow: 1.5px 1.5px var(--dark);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .alert {
   margin: 5px;
 }
 
-#graphparent {
-  position: relative;
-  margin: 5%;
-}
-#graphbox {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: 5px black solid;
-}
 /* End styling moodcard page */
 
 .hide {
   display: none;
+}
+
+#moodtracker-title {
+  font-family: "Satisfy", cursive;
+  margin-top: 4%;
+  color: white;
+  text-shadow: 1.5px 1.5px var(--dark);
+}
+
+/* begin styling about page */
+
+#about-me-page-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  width: 75%;
+  background-color: var(--transparentbackground);
+  border-radius: 10px;
+}
+#about-me-page-text {
+  padding: 1%;
+}
+
+/* end styling about page */
+
+/*styling login page*/
+#signin-container {
+  margin-top: 3%;
+}
+/*end styling login page*/
+
+/* media queries for landing page */
+@media only screen and (max-width: 600px) {
+  #about-box {
+    position: absolute;
+    top: 450px;
+  }
 }

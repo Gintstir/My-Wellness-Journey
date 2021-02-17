@@ -1,4 +1,10 @@
-<h2> Welcome to your moodtracker, </h2>
+<header id="moodtracker-title">
+    <h1> Welcome to your moodtracker, </h1>
+</header>
+
+<img src="./assets/standing-stones.png" class="bg-secondary">
+
+
 <section id="description">
     <p>Enter the date, a brief title, and select a number that reflects your positivity for the day where 10 is the most
         positive. Then click the button to submit.</p>
@@ -6,7 +12,9 @@
 </section>
 
 <div class="row" id="cardparent">
-    <div class="card mood-card" style="width: 15rem;">
+    <div class="col-md-4 col-sm-3"></div>
+
+    <div class="card mood-card col-md-4 col-sm-4 general-box">
         <div class="card-body">
             <h5>Add Your Mood</h5>
             <input class="card-title" placeholder="Enter your mood" id="moodTitle" maxlength="12"/>
@@ -31,15 +39,25 @@
             </div>
         </div>
     </div>
+    <div class="col-md-4 col-sm-3"></div>
+
 </div> <!-- The row div -->
 
-<div class="row" id="graphparent">
-    <div id="graphbox" style="width:40%"> Moodtracker™
-        <canvas id="myChart" width="600" height="400"
-            style="display: block; box-sizing: border-box; width: 739.5px; height: 369px;"></canvas>
+</br>
 
+<div class="row">
+    <div class="col-1"></div>
+
+    <div class="col-md-10 col-sm-10 general-box" id="graphparent">
+        <div id="graphbox" style="width:100%"> Moodtracker™
+            <canvas id="myChart" width="400" height="200"
+                style="display: block; box-sizing: border-box; width: 739px; height: 369px;"></canvas>
+        </div>
     </div>
+
+    <div class="col-1"></div>
 </div>
+</br>
 <!-- jQuery first, then Popper.js, then Bootstrap JS, then our JS -->
 
 

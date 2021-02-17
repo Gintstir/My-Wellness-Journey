@@ -1,15 +1,19 @@
-<div class="container-fluid full-height">
+<img src="./assets/winding-path.png" class="bg-secondary">
+
+
+<section class="container-fluid full-height" id="signin-container">
     <div class="row">
-        <div class="col-sm-6">            
-            <form  id="login-form" class="login-form mt-5 mb-5">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+            <form id="login-form" class="login-form mt-5 mb-5 general-box">
                 <h5 class="text-center">Login</h5>
                 <div class="form-group">
                     <label for="email-login">Email</label>
-                    <input type="email"  class="form-control" id="email-login" placeholder="Email"/>
+                    <input type="email" class="form-control" id="email-login" placeholder="Email" />
                 </div>
                 <div class="form-group">
                     <label for="password-login">Password</label>
-                    <input type="password" class="form-control" id="password-login" placeholder="Password"/>
+                    <input type="password" class="form-control" id="password-login" placeholder="Password" />
                 </div>
                 <div class="col text-center">
                     <button type="submit" class="btn btn-primary">Login</button>
@@ -20,24 +24,26 @@
                 <div id="failedLogin" class="alert alert-danger" role="alert">
                     Login Failed!
                 </div>
-            </form>                
+            </form>
         </div>
         <br>
-        <br>    
-        <div class="col-sm-6">            
-            <form  id="signup-form" class="signup-form mt-5 mb-5">
+        <div class="col-sm-2"></div>
+
+        <br>
+        <div class="col-sm-4">
+            <form id="signup-form" class="signup-form mt-5 mb-5 general-box">
                 <h5 class="text-center">Signup</h5>
                 <div class="form-group">
                     <label for="username-signup">Username</label>
-                    <input type="text" class="form-control" id="username-signup" placeholder="Username"/>
+                    <input type="text" class="form-control" id="username-signup" placeholder="Username" />
                 </div>
                 <div class="form-group">
                     <label for="email-signup">Email</label>
-                    <input type="text" class="form-control" id="email-signup" placeholder="Email"/>
+                    <input type="text" class="form-control" id="email-signup" placeholder="Email" />
                 </div>
                 <div class="form-group">
                     <label for="password-login">Password</label>
-                    <input type="password" class="form-control" id="password-signup" placeholder="Password"/>
+                    <input type="password" class="form-control" id="password-signup" placeholder="Password" />
                 </div>
                 <div class="col text-center">
                     <button type="submit" class="btn btn-primary">Signup</button>
@@ -51,9 +57,13 @@
                 <div id="successSignUp" class="alert alert-success" role="alert">
                     You are now signed up!
                 </div>
-            </form>            
+            </form>
         </div>
+        <div class="col-sm-1"></div>
+
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</section>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 <script src="/javascript/login.js"></script>
