@@ -16,7 +16,6 @@
 
     <div class="card mood-card col-md-4 col-sm-4 general-box">
         <div class="card-body">
-            <h5>Add Your Mood</h5>
             <input class="card-title" placeholder="Enter your mood" id="moodTitle" maxlength="12"/>
             <h6><label for="start">Date:</label>
                 <input type="date" id="moodDate" name="trip-start" {{!-- value="2018-07-22" --}} min="2021-01-01"
@@ -29,13 +28,6 @@
             <button id="moodButton"> Track your mood </button>
             <div id="noMoodEntered" class="alert alert-danger" role="alert">
                 Please enter your mood!
-            </div>
-            <div class="deleteForm">
-                <h5>Delete</h5>
-                <input type="date" id="dateEditor" name="trip-start"
-                {{!-- value="2018-07-22" --}}
-                min="2021-01-01" max="2025-12-31">
-                <button id="deleteMood">Delete entries for this day</button>
             </div>
         </div>
     </div>
@@ -70,4 +62,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 <script src="./javascript/mood-chart.js"></script>
 <script src="./javascript/moodcard.js"></script>
-<script src="./javascript/delete.js"></script>
