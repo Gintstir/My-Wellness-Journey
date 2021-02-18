@@ -1,10 +1,13 @@
 # **My-Wellness-Journey** ![badge](https://img.shields.io/badge/License-Apache~2.0-brightgreen.svg)  
 
-An app to help you get and stay motivated on the path to wellness.    
+An app to help you get and stay motivated on the path to wellness.   
+
+Link to deployed site: **[My Wellness Journey](https://my-wellness-journey.herokuapp.com/)**
 
 ## **Table of Contents**
 
 * *[Description](#description)*
+* *[User-Story](#user-story)*
 * *[Screenshots](#screenshots)*
 * *[Installation](#installation)*
 * *[Usage](#usage)*
@@ -19,13 +22,33 @@ An app to help you get and stay motivated on the path to wellness.
 
 My-Wellness-Journey is all about you.  Connecting a robust back-end to an interactive front-end, My-Wellness-Journey is a full stack application designed with your wellbeing front and center.  Keep track of and visualize your moods. Log on and get lighhearted reminders about staying hydrated.  Discover a new exercise or stretch that keeps your going through your busy day.  Not only do we value your health and happiness but your security online is also a top priority.  With secure user sessions, account protection and password encryption your visit to My-Wellness-Journey is sure to be just as private and safe as it is fun and fulfilling. 
 
+## **User-Story**
+
+```
+AS AN exhausted boot camp student,
+I WANT to see funny .Gifs,
+SO THAT I am reminded to drink enough water throughout the day.
+
+AS A stay-at-home parent,
+I WANT to see data about me displayed intuitively,
+SO THAT I can keep track of my moods, and my mental health.
+
+AS AN office worker,
+I WANT to do a quick exercise or stretch,
+SO THAT I can recenter and refocus myself and return to work.
+```
+
 ## **Screenshots**
 
-![landing-page](public/assets/My-Wellness-Journey.png)
+![landing-page](public/assets/landing-page.png)
 
 ![login-page](public/assets/login-page.png)
 
-![moodtracker](public/assets/moodtracker.png)
+![homepage](public/assets/homepage.png)
+
+![moodtracker](public/assets/mood-tracker.png)
+
+![about-us](public/assets/about-us.png)
 
 ## **Installation**
 
