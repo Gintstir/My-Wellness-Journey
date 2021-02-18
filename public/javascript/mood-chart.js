@@ -7,16 +7,18 @@ const myChart = new Chart(ctx, {
     data: {
         labels: [],
         datasets: [{
-            label: 'Your Moods',
+            label: 'Moods',
             data: [],
-            backgroundColor: [
-                'rgba(47, 157, 144, .4)',
-                
-            ],
-            borderColor: [                
-                'rgba(47, 157, 144, 1)'                
-            ],
-            borderWidth: 1
+            backgroundColor: 'rgba(47, 157, 144, .4)',
+            borderColor: 'rgba(47, 157, 144, 1)',
+            borderWidth: 2,            
+            radius: 5,
+            pointStyle: 'circle',
+            pointHitRadius: 20,
+            pointBorderColor: 'rgba(124, 115, 191, .9)',
+            pointBackgroundColor: 'rgba(124, 115, 191, .9)',
+            
+            
         }]
     },
     options: {
@@ -31,15 +33,34 @@ const myChart = new Chart(ctx, {
         },
         title: {
             display: true,
-            fontSize: 18,
-            text: 'Moodtracker'
-        },        
+            fontSize: 20,
+            text: 'Moodtracker™'
+        },
+        tooltips: {
+            mode: 'nearest',
+            titleAlign: 'center',
+            titleFontSize: 18,
+            titleFontColor: '#2e1b0f',
+            bodyFontColor: '#2e1b0f',
+            bodyFontSize: 18,
+            bodyAlign: 'center',
+            backgroundColor: 'hsl(0, 28%, 91%, 0.8)',
+            caretSize: 10,
+            caretPadding: 10,
+            xPadding: 10,
+            yPaddig: 10,
+            // callbacks: {
+            //     label: function(tooltipItems, data) {
+            //         return 'Your Mood: ' + dbMoodData.map(moodData => moodData.title);
+            //     }
+            // }
+            
+        },
+
         responsive: true,
         aspectRatio: 2,
         maintainAspectRatio: true,
-        tooltips: {
-            mode: 'nearest'
-        } 
+         
     }
 });
 
